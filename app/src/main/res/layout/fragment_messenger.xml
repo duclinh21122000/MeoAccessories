@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.frgament.FragmentMessenger">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/shape_header"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Chat"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semi_bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_list_product"
+            android:layout_marginTop="70dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/shape_edt_search"
+                android:drawableLeft="@drawable/ic_search"
+                android:paddingLeft="15dp"
+                android:hint="Tìm kiếm"
+                android:id="@+id/edt_search"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/edt_search"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:id="@+id/rv_list_messenger_admin"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/edt_search"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:id="@+id/rv_list_messenger_user" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/avatar"
+        android:id="@+id/img_user"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_user"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_edt"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đường Đức Linh"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:id="@+id/tv_fullName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mặt hàng này còn không"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:id="@+id/tv_comment"/>
+    </LinearLayout>
+</RelativeLayout>
